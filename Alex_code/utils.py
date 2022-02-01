@@ -65,6 +65,7 @@ def generate_data(num_x, num_t, num_f_train, num_i_train, device):
     # Generate tensors
     x_ic_train = torch.tensor(x_ic_train,
                               dtype=torch.float32).to(device)
+    
     x_int_train = torch.tensor(x_int_train, requires_grad=True,
                                dtype=torch.float32).to(device)
     x_test = torch.tensor(x_test,
